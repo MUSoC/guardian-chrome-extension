@@ -1,0 +1,27 @@
+{
+"manifest_version": 2,
+    "name": "Guardian",
+    "description": "Blocks offensive words",
+    "version": "1.0",
+         "page_action": {
+          "default_icon": "icon.png"  
+        },
+        "icons": {
+           "16": "16.png",
+           "24": "24.png",
+           "32": "32.png",
+           "48": "48.png",
+          "128": "128.png" },
+          "options_page": "options.html",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
