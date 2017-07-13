@@ -18,15 +18,19 @@
         ],
           "options_page": "options.html",
           "content_security_policy":"script-src 'self' https://apis.google.com; object-src 'self'",
+          
+  "permissions": [ 
+  "http://*/*",
+  "https://*/*"
+ ],
     "content_scripts": [
         {
             "matches": [
                 "*://*/*"
             ],
             "js": [
-                "content.js"
-            ],
-            "run_at": "document_end"
+                "content.js","clarifai.js","keys.js"
+            ]
         }
     ]
 }
