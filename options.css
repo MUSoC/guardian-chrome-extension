@@ -13,7 +13,9 @@ body,html {
 	padding: 0px;
 	margin: 0px;
 	height: 16%;
-	 background-color: #009688;
+	 background-color: black;
+     /*background: linear-gradient(to right, #232526,#414345);*/
+     color: white;
 	z-index: 1;
 	-webkit-box-shadow: 0 8px 6px -6px #999;
     -moz-box-shadow: 0 8px 6px -6px #999;
@@ -33,12 +35,14 @@ body,html {
 	padding: 0px;
      height: 100%;
      width: 100%;
-     background-color: black;
-     opacity: 0.9;
+      background-color: black;
+      background: linear-gradient(to right,  #aa076b, #61045f);
+       opacity: 0.9;
 }
 
 #two {
 	position: relative;
+    background: linear-gradient(to right, #cc2b5e,#753a88);
 	top: 0px;
 	margin: 0px;
 	padding: 0px;
@@ -48,6 +52,7 @@ body,html {
 }
 #three {
 	position: relative;
+    background: linear-gradient(to right, #642B73,#C6426E);
 	top: 0px;
 	margin: 0px;
 	padding: 0px;
@@ -60,15 +65,16 @@ body,html {
 	top: 40%;
 	right: 10%;
 	height: 35%;
-	width: 35%;
-	background-color: #E0E0E0;
-	text-align: center;
-    font-family: verdana;
+	width: 35%; 
+     background-color:#000000;
+     color: #E0E0E0;
+    text-align: center;
+    font-family: verdana;);
     font-size: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 10px 10px 10px 5px #888888;
+    box-shadow: 6px 6px 6px 6px #101010;
 }
 #child:hover{
 	box-shadow: 0px 0px 0px 0px #888888;
@@ -82,14 +88,15 @@ body,html {
 	left: 10%;
 	height: 35%;
 	width: 35%;
-	background-color: #E0E0E0;
+	 background-color: #000000;
+     color: #E0E0E0;
 	text-align: center;
     font-family: verdana;
     font-size: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 10px 10px 10px 5px #888888;
+    box-shadow: 6px 6px 6px 6px #101010;
 }
 .overlay {
     height: 100%;
@@ -139,4 +146,31 @@ body,html {
     top: 15px;
     right: 35px;
   }
+}
+p{
+    color: black;
+    text-align: center;
+    font-size: 20px;
+}
+textarea{
+    align-self: center;
+}
+#contain{
+    padding-top: 10%;
+}
+a {color:#E0E0E0;
+text-decoration: none;}     
+a:visited {color:#E0E0E0;}  
+a:hover {color:#E0E0E0;}  
+a:active {color:#E0E0E0;}  
+h3{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+#form{
+    vertical-align: middle;
+}
+#list{
+    vertical-align: middle;
 }
