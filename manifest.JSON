@@ -1,7 +1,7 @@
 {
 "manifest_version": 2,
     "name": "Guardian",
-    "description": "Blocks offensive words",
+    "description": "Blocks offensive words and images",
     "version": "1.0",
          "page_action": {
           "default_icon": "icon.png"  
@@ -13,15 +13,15 @@
            "48": "48.png",
           "128": "128.png" },
           "options_page": "options.html",
-          "permissions": [
-          "storage"
-        ],
           "options_page": "options.html",
           "content_security_policy":"script-src 'self' https://apis.google.com; object-src 'self'",
           
   "permissions": [ 
+    "tabs",
   "http://*/*",
-  "https://*/*"
+  "https://*/*",
+  "storage",
+  "contextMenus"
  ],
     "content_scripts": [
         {
